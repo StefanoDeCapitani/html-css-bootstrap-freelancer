@@ -1,40 +1,199 @@
+/*RESET*/
+html {
+  scroll-padding-top: 7rem;
+}
+
+:root {
+  --bs-primary-rgb: 26, 188, 156;
+  --bs-secondary-rgb: 44, 62, 80;
+}
+
+/*Bootstrap Classes Overridden*/
+.masthead {
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+
+.navbar-brand:hover {
+  color: #ffffff;
+}
+
+.nav-link:hover {
+  color: #15967d;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  color: #fff;
+  background: rgb(var(--bs-primary-rgb));
+}
+
+.rounded {
+  border-radius: 1rem !important;
+}
+
+.btn-primary {
+  color: #fff;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.form-floating input.form-control,
+.form-floating textarea.form-control {
+  font-size: 1.5rem;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  border-radius: 0;
+  border-width: 1px;
+}
+
+.form-floating > .form-control,
+.form-floating > .form-select {
+  height: 5.5rem;
+  line-height: 1.25;
+}
+
+.form-floating label {
+  font-size: 1.5rem;
+  color: #6c757d;
+  display: block;
+}
+
+.btn-primary:hover {
+  color: #fff;
+  background-color: #14947a;
+  border-color: #14947a;
+}
+
+.form-floating > .form-control:focus,
+.form-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 2.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.form-floating > .form-control {
+  padding: 1.5rem 0;
+}
+
+/*My classes*/
+
+.hero_image {
+  width: clamp(15rem, 50%, 20vw);
+}
+
+.learn_more_hover {
+  --learn-more-size: calc(100% - 2rem);
+  width: var(--learn-more-size);
+  height: var(--learn-more-size);
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.portfolio_card:hover .learn_more_hover {
+  opacity: 0.8;
+}
+
+.learn_more_hover img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 105%;
+  transform: translate(-50%, -50%) rotateZ(90deg);
+  background: #ffffff;
+}
+
+.about_text_col {
+  max-width: 40ch;
+}
+
+.download {
+  border: 2px solid #ffffff;
+  border-radius: 0.5rem;
+  width: max-content;
+}
+
+.download:hover,
+.download:hover i {
+  color: #000000;
+}
+
+.download:hover {
+  background-color: #ffffff;
+}
+
 section > h2 {
   text-align: center;
 }
 
-.divider {
+.footer_social_btn {
+  margin: 0 0.3rem;
+  width: 3rem;
+  height: 3rem;
+  padding-top: 0.63rem;
+}
+
+.footer_social_btn:hover {
+  background-color: white;
+}
+
+.footer_social_btn:hover i {
+  color: #3a546d;
+}
+
+/*My utilities*/
+
+.my-bg-secondary-light {
+  background: #3a546d;
+}
+
+footer .my-a-primary {
+  color: #1abc9c;
+}
+
+.my-no-underline {
+  text-decoration: none;
+}
+
+.my-divider {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 0.5rem;
 }
 
-.divider-custom-line {
-  width: 7rem;
+.my-divider-line {
+  flex: 0 1 7rem;
   height: 3px;
   border-radius: 2px;
 }
 
-.divider-dark > .divider-custom-line {
+.my-divider-dark > .my-divider-line {
   background: #000000;
 }
 
-.divider-light > .divider-custom-line {
+.my-divider-light > .my-divider-line {
   background: #ffffff;
 }
 
-.divider-dark > .divider-custom-icon {
+.my-divider-dark > .my-divider-icon {
   color: #000000;
 }
 
-.divider-light > .divider-custom-icon {
+.my-divider-light > .my-divider-icon {
   color: #ffffff;
 }
 
-.divider-custom-icon {
+.my-divider-icon {
   font-size: 1.5rem;
 }
 
-.my_content_text_white * {
+.my-content-text-white * {
   color: white;
 }
