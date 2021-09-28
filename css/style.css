@@ -1,0 +1,40 @@
+section > h2 {
+  text-align: center;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 0.5rem;
+}
+
+.divider-custom-line {
+  width: 7rem;
+  height: 3px;
+  border-radius: 2px;
+}
+
+.divider-dark > .divider-custom-line {
+  background: #000000;
+}
+
+.divider-light > .divider-custom-line {
+  background: #ffffff;
+}
+
+.divider-dark > .divider-custom-icon {
+  color: #000000;
+}
+
+.divider-light > .divider-custom-icon {
+  color: #ffffff;
+}
+
+.divider-custom-icon {
+  font-size: 1.5rem;
+}
+
+.my_content_text_white * {
+  color: white;
+}
