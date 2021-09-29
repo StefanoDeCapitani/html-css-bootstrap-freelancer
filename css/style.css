@@ -55,11 +55,12 @@ html {
 
 .form-floating > .form-control,
 .form-floating > .form-select {
-  height: 5.5rem;
+  height: 6rem;
   line-height: 1.25;
 }
 
 .form-floating label {
+  padding-left: 0;
   font-size: 1.5rem;
   color: #6c757d;
   display: block;
@@ -69,6 +70,10 @@ html {
   color: #fff;
   background-color: #14947a;
   border-color: #14947a;
+}
+
+.btn-primary:focus {
+  background-color: #14947a;
 }
 
 .form-floating > .form-control:focus,
