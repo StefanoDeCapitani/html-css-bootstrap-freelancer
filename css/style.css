@@ -92,6 +92,10 @@ html {
   width: clamp(15rem, 50%, 20vw);
 }
 
+.portfolio_card:hover img {
+  filter: blur(0.5rem);
+}
+
 .learn_more_hover {
   --learn-more-size: calc(100% - 2rem);
   width: var(--learn-more-size);
@@ -99,20 +103,30 @@ html {
   overflow: hidden;
   opacity: 0;
   transition: opacity 0.5s;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .portfolio_card:hover .learn_more_hover {
-  opacity: 0.8;
+  opacity: 1;
 }
 
-.learn_more_hover img {
+.learn_more_hover .card_content_overlay {
+  transform: translateY(150%);
+  transition: all 0.4s;
+}
+
+.portfolio_card:hover .card_content_overlay {
+  transform: translateY(0);
+}
+
+/* .learn_more_hover img {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 105%;
   transform: translate(-50%, -50%) rotateZ(90deg);
   background: #ffffff;
-}
+} */
 
 .about_text_col {
   max-width: 40ch;
