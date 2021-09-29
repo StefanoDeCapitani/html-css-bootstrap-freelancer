@@ -104,18 +104,21 @@ html {
   opacity: 0;
   transition: opacity 0.5s;
   background: rgba(0, 0, 0, 0.5);
+  display: flex;
 }
 
-.portfolio_card:hover .learn_more_hover {
+.learn_more_hover:hover {
   opacity: 1;
 }
 
 .learn_more_hover .card_content_overlay {
+  margin: auto;
+  max-width: 25ch;
   transform: translateY(150%);
   transition: all 0.4s;
 }
 
-.portfolio_card:hover .card_content_overlay {
+.learn_more_hover:hover .card_content_overlay {
   transform: translateY(0);
 }
 
