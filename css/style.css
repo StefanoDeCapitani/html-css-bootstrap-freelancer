@@ -173,6 +173,14 @@ section > h2 {
   text-align: center;
 }
 
+#contact_me {
+  max-width: 992px;
+}
+
+#contact_me input[type="submit"] {
+  margin-top: -2rem;
+}
+
 .footer_social_btn {
   --bg-social: transparent;
   margin: 0 0.3rem;
