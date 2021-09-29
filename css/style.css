@@ -88,6 +88,24 @@ html {
 
 /*My classes*/
 
+.logo {
+  flex-shrink: 1;
+  overflow: hidden;
+}
+
+.dropdown_menu {
+  display: none;
+  top: 5rem;
+  right: 0;
+
+  border-radius: 0.5rem;
+  padding: 0.5rem 0.2rem;
+}
+
+.hamburger:focus-within .dropdown_menu {
+  display: block;
+}
+
 .hero_image {
   width: clamp(15rem, 50%, 20vw);
 }

@@ -24,8 +24,8 @@
   </head>
   <body>
     <header class="text-uppercase my-content-text-white bg-secondary fixed-top">
-      <nav class="nav nav-pills container align-items-center p-3">
-        <a class="navbar-brand" tab-index="0" href="#">Start Bootstrap</a>
+      <nav class="nav flex-nowrap container align-items-center p-3">
+        <a class="navbar-brand logo" tab-index="0" href="#">Start Bootstrap</a>
         <ul class="nav ms-auto d-none d-md-flex">
           <li class="nav-item">
             <a class="nav-link active" tab-index="0" href="#portfolio"
@@ -39,15 +39,24 @@
             <a class="nav-link" tab-index="0" href="#contact_me">Contact</a>
           </li>
         </ul>
-        <div class="nav-link hamburger d-md-none ms-auto">
-          <button class="btn btn-primary">
+        <div
+          class="
+            nav-link
+            hamburger
+            d-md-none
+            ms-auto
+            position-relative
+            text-nowrap
+          "
+        >
+          <button class="hamburger_btn btn btn-primary">
             MENU
             <i class="bi bi-list"></i>
           </button>
-          <div class="dropdown_menu">
+          <div class="dropdown_menu position-absolute bg-secondary">
             <ul class="nav ms-auto flex-column">
               <li class="nav-item">
-                <a class="nav-link active" tab-index="0" href="#portfolio"
+                <a class="nav-link" tab-index="0" href="#portfolio"
                   >Portfolio</a
                 >
               </li>
